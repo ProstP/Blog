@@ -1,0 +1,153 @@
+.nav__link
+{
+    font: normal 400 12px/20px 'Oxygen';
+    letter-spacing: 0.6px;
+    text-transform: uppercase;
+}
+
+.posts-header
+{
+    height: 500px;
+    background: url("Images/lets_do_it_together.png") no-repeat;
+}
+
+.posts-header__slogan
+{
+    font: normal 400 50px/51px 'Lora';
+    color: white;
+    letter-spacing: 2px;
+}
+
+.posts-header__motto
+{
+    font: normal 400 17px/20px 'Oxygen';
+    color: white;
+}
+
+.posts-header__button-for-latest-posts
+{
+    color: white;
+    width: 167px;
+    height: 44px;
+    font: normal 400 13px/20px 'Oxygen';
+}
+
+.posts-header__link
+{
+    font: normal 400 14px/20px 'Lora';
+    color: #768088;
+}
+
+.posts
+{
+    font-style: normal;
+    font-weight: 400;
+    font-family: 'Oxygen';
+}
+
+.featured-posts__header
+{
+    font-size: 20px;
+    line-height: 27px;
+}
+
+.most-recent__header
+{
+    font-size: 20px;
+    line-height: 27px;
+}
+
+.post__title
+{
+    font-family: 'Lora';
+}
+
+.post__title_where-post_in-featured-posts
+{
+    font-size: 27px;
+    line-height: 30px;
+}
+
+.post__title_where-post_in-most-recent
+{
+    font-size: 16px;
+    line-height: 21px;
+}
+
+.post__description_where-post_in-featured-posts
+{
+    font-size: 14px;
+    line-height: 25px;
+}
+
+.post__description_where-post_in-most-recent
+{
+    font-size: 13px;
+    line-height: 19px;
+}
+
+.post__name_surname_vogels
+{
+    font-size: 12px;
+    line-height: 35px;
+}
+
+.post__name_surname_wong
+{
+    font-size: 11px;
+    line-height: 35px;
+}
+
+.post__date
+{
+    font-size: 12px;
+    line-height: 35px;
+}
+
+.post_type_the-road-ahead
+{
+    height: 280px;
+    background: url(Images/the_road_ahead.png) no-repeat;
+}
+
+.post_type_adventure-from-top-down
+{
+    height: 280px;
+    background: url(Images/adventure_from_top_down.png) no-repeat;
+}
+
+.post_type_still-standing-tall
+{
+    height: 150px;
+    background: url(Images/still_standing_tall.png) no-repeat;
+}
+
+.post_type_sunny-side-up
+{
+    height: 150px;
+    background: url(Images/sunny_side_up.png) no-repeat;
+}
+
+.post_type_water-falls
+{
+    height: 150px;
+    background: url(Images/water_falls.png) no-repeat;
+}
+
+.post_type_through-the-mist
+{
+    height: 150px;
+    background: url(Images/through_the_mist.png) no-repeat;
+}
+
+.post_type_awaken-early
+{
+    height: 150px;
+    background: url(Images/awaken_early.png) no-repeat;
+}
+
+.post_type_try-it-always
+{
+    height: 150px;
+    background: url(Images/try_it_always.png) no-repeat;
+}

@@ -1,0 +1,21 @@
+.nav__link
+{
+    font: normal 400 12px/20px 'Oxygen';
+    letter-spacing: 0.6px;
+    text-transform: uppercase;
+}
+
+.main__header
+{
+    font: normal 400 50px/51px 'Lora'
+}
+
+.main__phrase
+{
+    font: normal 400 17px/20px 'Oxygen'
+}
+
+.main__text
+{
+    font: normal 400 24px/35px 'Oxygen'
+}
