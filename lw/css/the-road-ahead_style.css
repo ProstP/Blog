@@ -1,21 +1,53 @@
+*
+{
+    padding: 0;
+    margin: 0;
+}
+
+ul
+{
+    list-style: none;
+}
+
 .nav__link
 {
     font: normal 400 12px/20px 'Oxygen';
     letter-spacing: 0.6px;
     text-transform: uppercase;
+    text-decoration: none;
+    color: #FFFFFF;
 }
 
 .main__header
 {
-    font: normal 400 50px/51px 'Lora'
+    font: normal 400 50px/51px 'Lora';
+    letter-spacing: 2px;
+    color: #2E2E2E;
 }
 
 .main__phrase
 {
-    font: normal 400 17px/20px 'Oxygen'
+    font: normal 400 17px/20px 'Oxygen';
+    color: rgba(46, 46, 46, 0.63);
 }
 
 .main__text
 {
-    font: normal 400 24px/35px 'Oxygen'
+    font: normal 400 24px/35px 'Oxygen';
+    color: #101315;
+}
+
+.footer
+{
+    height: 89px;
+    background: url(../Images/footer.png) no-repeat;
+}
+
+.nav__link_footer
+{
+    font: normal 400 12px/20px 'Oxygen';
+    letter-spacing: 0.6px;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.6);
 }
