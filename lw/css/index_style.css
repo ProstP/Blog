@@ -1,31 +1,47 @@
+*
+{
+    padding: 0;
+    margin: 0;
+}
+
+ul
+{
+    list-style: none;
+}
+
 .nav__link
 {
     font: normal 400 12px/20px 'Oxygen';
     letter-spacing: 0.6px;
     text-transform: uppercase;
+    text-decoration: none;
+    color: #FFFFFF;
 }
 
 .posts-header
 {
     height: 500px;
-    background: url("Images/lets_do_it_together.png") no-repeat;
+    background: url("../Images/lets_do_it_together.png") no-repeat;
 }
 
 .posts-header__slogan
 {
     font: normal 400 50px/51px 'Lora';
-    color: white;
+    color: #ffffff;
     letter-spacing: 2px;
 }
 
 .posts-header__motto
 {
     font: normal 400 17px/20px 'Oxygen';
-    color: white;
+    color: rgba(255, 255, 255, 0.63);
 }
 
 .posts-header__button-for-latest-posts
 {
+    background-color: #DD783F;
+    border-width: 0;
+    border-radius: 3px;
     color: white;
     width: 167px;
     height: 44px;
@@ -36,6 +52,7 @@
 {
     font: normal 400 14px/20px 'Lora';
     color: #768088;
+    text-decoration: none;
 }
 
 .posts
@@ -43,111 +60,152 @@
     font-style: normal;
     font-weight: 400;
     font-family: 'Oxygen';
+    background: #F7F7F7;
 }
 
 .featured-posts__header
 {
     font-size: 20px;
     line-height: 27px;
+    color: #2E2E2E;
+    letter-spacing: 2px;
+}
+
+.featured-posts__title
+{
+    font: 27px/30px 'Lora';
+    color: white;
+}
+
+.featured-posts__description
+{
+    font-size: 14px;
+    line-height: 25px;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.featured-posts__name_surname_vogels
+{
+    font-size: 12px;
+    line-height: 35px;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.featured-posts__name_surname_wong
+{
+    font-size: 11px;
+    line-height: 35px;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.featured-posts__date
+{
+    font-size: 12px;
+    line-height: 35px;
+    color: rgba(255, 255, 255, 0.7); 
 }
 
 .most-recent__header
 {
     font-size: 20px;
     line-height: 27px;
+    color: #2E2E2E;
+    letter-spacing: 2px;
 }
 
-.post__title
+.most-recent__title
 {
-    font-family: 'Lora';
+    font: 16px/21px 'Lora';
+    color: #101315;
 }
 
-.post__title_where-post_in-featured-posts
-{
-    font-size: 27px;
-    line-height: 30px;
-}
-
-.post__title_where-post_in-most-recent
-{
-    font-size: 16px;
-    line-height: 21px;
-}
-
-.post__description_where-post_in-featured-posts
-{
-    font-size: 14px;
-    line-height: 25px;
-}
-
-.post__description_where-post_in-most-recent
+.most-recent__description
 {
     font-size: 13px;
     line-height: 19px;
+    color: #7A7A7A;
 }
 
-.post__name_surname_vogels
+.most-recent__name_surname_vogels
 {
     font-size: 12px;
     line-height: 35px;
+    color: #999999;
 }
 
-.post__name_surname_wong
+.most-recent__name_surname_wong
 {
     font-size: 11px;
     line-height: 35px;
+    color: #999999;
 }
 
-.post__date
+.most-recent__date
 {
     font-size: 12px;
     line-height: 35px;
+    color: #999999;
 }
 
-.post_type_the-road-ahead
+.featured-posts__the-road-ahead
 {
     height: 280px;
-    background: url(Images/the_road_ahead.png) no-repeat;
+    background: url(../Images/the_road_ahead.png) no-repeat;
 }
 
-.post_type_adventure-from-top-down
+.featured-posts__adventure-from-top-down
 {
     height: 280px;
-    background: url(Images/adventure_from_top_down.png) no-repeat;
+    background: url(../Images/adventure_from_top_down.png) no-repeat;
 }
 
-.post_type_still-standing-tall
+.most-recent__still-standing-tall
 {
     height: 150px;
-    background: url(Images/still_standing_tall.png) no-repeat;
+    background: url(../Images/still_standing_tall.png) no-repeat;
 }
 
-.post_type_sunny-side-up
+.most-recent__sunny-side-up
 {
     height: 150px;
-    background: url(Images/sunny_side_up.png) no-repeat;
+    background: url(../Images/sunny_side_up.png) no-repeat;
 }
 
-.post_type_water-falls
+.most-recent__water-falls
 {
     height: 150px;
-    background: url(Images/water_falls.png) no-repeat;
+    background: url(../Images/water_falls.png) no-repeat;
 }
 
-.post_type_through-the-mist
+.most-recent__through-the-mist
 {
     height: 150px;
-    background: url(Images/through_the_mist.png) no-repeat;
+    background: url(../Images/through_the_mist.png) no-repeat;
 }
 
-.post_type_awaken-early
+.most-recent__awaken-early
 {
     height: 150px;
-    background: url(Images/awaken_early.png) no-repeat;
+    background: url(../Images/awaken_early.png) no-repeat;
 }
 
-.post_type_try-it-always
+.most-recent__try-it-always
 {
     height: 150px;
-    background: url(Images/try_it_always.png) no-repeat;
+    background: url(../Images/try_it_always.png) no-repeat;
+}
+
+.footer
+{
+    height: 89px;
+    background: url(../Images/footer.png) no-repeat;
+}
+
+.nav__link_footer
+{
+    font: normal 400 12px/20px 'Oxygen';
+    letter-spacing: 0.6px;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.6);
 }
