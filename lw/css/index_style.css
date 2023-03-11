@@ -1,16 +1,65 @@
 *
 {
-    padding: 0;
     margin: 0;
+    padding: 0;
 }
 
-ul
+#container
+{
+    display: flex;
+    flex-direction: column;
+}
+
+.wrapper
+{
+    width: 967px;
+}
+
+.header
+{
+    display: flex;
+    position: absolute;
+    justify-content: space-between;
+    align-items: center;
+    height: 78px;
+    align-self: center;
+}
+
+.nav__ul
 {
     list-style: none;
+    display: flex;
+    justify-content: space-between;
+}
+
+.menu
+{
+    height: 65px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu__list-of-links
+{
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 46px;
+    
+}
+
+.menu__link
+{
+    font: normal 400 14px/20px 'Lora';
+    color: #768088;
+    text-decoration: none;
 }
 
 .nav__link
 {
+    padding: 10px 20px;
     font: normal 400 12px/20px 'Oxygen';
     letter-spacing: 0.6px;
     text-transform: uppercase;
@@ -18,22 +67,40 @@ ul
     color: #FFFFFF;
 }
 
+.posts
+{
+    height: 1255px;
+    font-style: normal;
+    font-weight: 400;
+    font-family: 'Oxygen';
+    background: #F7F7F7;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 .posts-header
 {
-    height: 500px;
-    background: url("../Images/lets_do_it_together.png") no-repeat;
+    height: 527px;
+    background:  url("../images/lets_do_it_together.png") no-repeat;
+    background-size: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .posts-header__slogan
-{
-    font: normal 400 50px/51px 'Lora';
+{ 
+    font: normal 400 54px/51px 'Lora';
     color: #ffffff;
     letter-spacing: 2px;
+    margin: 20px;
 }
 
 .posts-header__motto
 {
-    font: normal 400 17px/20px 'Oxygen';
+    font: normal 400 20px/20px 'Oxygen';
     color: rgba(255, 255, 255, 0.63);
 }
 
@@ -43,24 +110,19 @@ ul
     border-width: 0;
     border-radius: 3px;
     color: white;
-    width: 167px;
+    width: 175px;
     height: 44px;
     font: normal 400 13px/20px 'Oxygen';
+    margin: 31px;
 }
 
-.posts-header__link
+.featured-posts
 {
-    font: normal 400 14px/20px 'Lora';
-    color: #768088;
-    text-decoration: none;
-}
-
-.posts
-{
-    font-style: normal;
-    font-weight: 400;
-    font-family: 'Oxygen';
-    background: #F7F7F7;
+    height: 414px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
 }
 
 .featured-posts__header
@@ -69,12 +131,66 @@ ul
     line-height: 27px;
     color: #2E2E2E;
     letter-spacing: 2px;
+    margin: 68px 0 16px 0;
+}
+
+.posts__line
+{
+    width: 188px;
+    margin-bottom: 23px;
+    border: 1px solid #DEDEDE;
+}
+
+.featured-posts__block-with-posts
+{
+    height: 294px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.featured-posts__post
+{
+    margin: 7px 10px 7px 10px;
+    width: 460px;
+    height: 280px;
+    display: flex;
+    flex-direction: column;
+    align-items: self-start;
+    justify-content: flex-end;
+}
+
+.featured-posts__image
+{
+    z-index: 1;
+    position: absolute;
+}
+
+.featured-posts__other-elements
+{
+    z-index: 2;
+    margin-left: 20px;
+    margin-right: 20px;
 }
 
 .featured-posts__title
 {
     font: 27px/30px 'Lora';
     color: white;
+    margin-bottom: 6px;
+}
+
+.featured-posts__button
+{
+    width: 87px;
+    height: 26px;
+    background-color: #DD783F;
+    font-size: 12px;
+    line-height: 13px;
+    text-transform: uppercase;
+    border: 0;
+    color: #ffffff;
+    margin-bottom: 234px;
+    position: absolute;
 }
 
 .featured-posts__description
@@ -82,6 +198,24 @@ ul
     font-size: 14px;
     line-height: 25px;
     color: rgba(255, 255, 255, 0.7);
+    margin-bottom: 12px;
+}
+
+.featured-posts__author-and-date
+{
+    width: 420px;
+    display: flex;
+    margin-bottom:15px;
+    display: grid;
+    grid-template-columns: 36px 80px 1fr;
+
+}
+
+.featured-posts__icon
+{
+    width: 26px;
+    height: 26px;
+    margin-top: 4px;
 }
 
 .featured-posts__name_surname_vogels
@@ -102,7 +236,8 @@ ul
 {
     font-size: 12px;
     line-height: 35px;
-    color: rgba(255, 255, 255, 0.7); 
+    color: rgba(255, 255, 255, 0.7);
+    text-align: right;
 }
 
 .most-recent__header
@@ -111,12 +246,47 @@ ul
     line-height: 27px;
     color: #2E2E2E;
     letter-spacing: 2px;
+    margin-top: 60px;
+    margin-bottom: 16px;
+}
+
+.most-recent
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 752px;
+}
+
+.most-recent__block-with-posts
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.most-recent__post
+{
+    width: 296px;
+    height: 291px;
+    margin: 6px 12px 19px 12px;
+    background-color: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.most-recent__title-and-description
+{
+    width: 296px;
+    height: 93px;
 }
 
 .most-recent__title
 {
     font: 16px/21px 'Lora';
     color: #101315;
+    margin: 14px 0 0 13px;
 }
 
 .most-recent__description
@@ -124,6 +294,25 @@ ul
     font-size: 13px;
     line-height: 19px;
     color: #7A7A7A;
+    margin: 6px 0 0 13px;
+}
+
+.most-recent__line-in-post
+{
+    border: 1px solid #EFEFEF;
+}
+
+.most-recent__author-and-date
+{
+    width: 296px;
+    height: 48px;
+    display: grid;
+    grid-template-columns: 49px 80px 1fr;
+}
+
+.most-recent__icon
+{
+    margin: 12px 0 0 13px;
 }
 
 .most-recent__name_surname_vogels
@@ -131,6 +320,7 @@ ul
     font-size: 12px;
     line-height: 35px;
     color: #999999;
+    margin-top: 7px;
 }
 
 .most-recent__name_surname_wong
@@ -138,6 +328,7 @@ ul
     font-size: 11px;
     line-height: 35px;
     color: #999999;
+    margin-top: 7px;
 }
 
 .most-recent__date
@@ -145,67 +336,81 @@ ul
     font-size: 12px;
     line-height: 35px;
     color: #999999;
-}
-
-.featured-posts__the-road-ahead
-{
-    height: 280px;
-    background: url(../Images/the_road_ahead.png) no-repeat;
-}
-
-.featured-posts__adventure-from-top-down
-{
-    height: 280px;
-    background: url(../Images/adventure_from_top_down.png) no-repeat;
-}
-
-.most-recent__still-standing-tall
-{
-    height: 150px;
-    background: url(../Images/still_standing_tall.png) no-repeat;
-}
-
-.most-recent__sunny-side-up
-{
-    height: 150px;
-    background: url(../Images/sunny_side_up.png) no-repeat;
-}
-
-.most-recent__water-falls
-{
-    height: 150px;
-    background: url(../Images/water_falls.png) no-repeat;
-}
-
-.most-recent__through-the-mist
-{
-    height: 150px;
-    background: url(../Images/through_the_mist.png) no-repeat;
-}
-
-.most-recent__awaken-early
-{
-    height: 150px;
-    background: url(../Images/awaken_early.png) no-repeat;
-}
-
-.most-recent__try-it-always
-{
-    height: 150px;
-    background: url(../Images/try_it_always.png) no-repeat;
+    text-align: right;
+    margin: 7px 13px 0 0;
 }
 
 .footer
 {
+    height: 378px;
+    background: url(../images/footer.png) no-repeat;
+    background-size: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.footer__field-for-email
+{
+    margin-bottom: 90px;
+}
+
+.footer__entry-field
+{
+    width: 340px;
+    height: 50px;
+    background: #FFFFFF;
+    border-radius: 3px 0px 0px 3px;
+    border-width: 0;
+    padding: 0px;
+    font: normal 400 12px/14px 'Roboto';
+    color: #817F83;
+    padding-left: 35px;
+}
+
+.footer__button-sumbit
+{
+    background: rgba(255, 255, 255, 0.28);
+    border-radius: 0px 3px 3px 0px;
+    border-width: 0;
+    width: 125px;
+    height: 50px;
+    font: normal 400 12px/14px 'Roboto';
+    color: #F8F8F8;
+}
+
+.footer__bottom
+{
     height: 89px;
-    background: url(../Images/footer.png) no-repeat;
+    width: 100%;
+    background: rgba(35, 47, 56, 0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer__bottom-links
+{
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer__title
+{
+    font: normal 400 25px/30px 'Oxygen';
+    color: #EFEFEF;
+    margin-bottom: 17px;
+}
+
+.footer__line
+{
+    width: 188px;
+    border: 1px solid #DEDEDE;
+    margin-bottom: 20px;
 }
 
 .nav__link_footer
 {
-    font: normal 400 12px/20px 'Oxygen';
-    letter-spacing: 0.6px;
-    text-transform: uppercase;
-    text-decoration: none;
     color: rgba(255, 255, 255, 0.6);
 }
